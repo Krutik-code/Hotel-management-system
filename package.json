@@ -1,0 +1,24 @@
+{
+  "name": "dbms-project",
+  "version": "1.0.0",
+  "description": "dbms project of hotel database management system",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "nishit, krutik, manan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.3",
+    "bootstrap-social": "^5.1.1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "mongoose": "^5.10.11",
+    "nodemon": "^2.0.6",
+    "path": "^0.12.7",
+    "popper.js": "^1.16.1"
+  }
+}

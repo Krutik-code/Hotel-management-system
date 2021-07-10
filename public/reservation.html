@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  
+
+  <title>DBMS PROJECT</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="./img/downloads.jpg" alt="logo"class="img-fluid"  width="70" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./photos.html">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./rooms.html">Rooms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./dining.html">Dining</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./s&f.html">Spa & Fitness</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+        <br>
+        <div class="row" id="content">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-2">
+              <span class="list-item">Travel With Confidence During COVID-19</span>
+          </div>
+          <div class="col-sm-2 mt-3">
+          <span class="list-item"><i class="fas fa-money-bill-wave mr-2"></i>Best Rates Guranteed</span>
+          </div>
+          <div class="col-sm-2 mt-3">
+              <span class="list-item"><i class="far fa-clock mr-2"></i>Flexible Cancellation</span>
+          </div>
+          <div class="col-sm-2 mt-3">
+              <span class="list-item"><i class="fas fa-pump-medical mr-2"></i>Commitment to Clean</span>
+          </div>
+          <div class="col-sm-2 mt-3">
+              <span class="list-item"><i class="fas fa-sign-in-alt mr-2 "></i>Contactless Services</span>
+          </div>
+          <div class="col-sm-1"></div>
+        <ul class="list-content">
+        </ul>
+      </div>
+        <div class="card-header mt-4"  style="background-color: black; color:aliceblue; text-align: center;">Welcome To The Registration Desk</div>
+        <br>
+        <div class="row row-content">
+          <div class="col-12 col-md-9" style="margin-left: 10px ;">
+            <h2>Booking Rates</h2><br>
+            <div class="table-responsive">
+              <table class="table table-striped"  >
+                <thead class="thead-dark">
+                  <tr>
+                    <th>Room Type</th>
+                    <th>Number Of Adults</th>
+                    <th>Number Of Children</th>
+                    <th>Rates (Maldivian Rufiyaa)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Overwater Pool Villa</th>
+                    <th>One</th>
+                    <th>None</th>
+                    <th>200</th>
+                  </tr>
+                  <tr>
+                    <th>Beach Pool Villa Sunrise</th>
+                    <th>One or Two</th>
+                    <th>One or None</th>
+                    <th>400</th>
+                  </tr>
+                  <tr>
+                    <th>Duplex Beach Pool Villa</th>
+                    <th>Two</th>
+                    <th>One or Two</th>
+                    <th>800</th>
+                  </tr>
+                  <tr>
+                    <th>Duplex Overwater Pool</th>
+                    <th>Two or Four</th>
+                    <th>None</th>
+                    <th>1000</th>
+                  </tr>
+                  <tr>
+                    <th>Beach Pool Villa Sunset</th>
+                    <th>Two or Four</th>
+                    <th>None</th>
+                    <th>1000</th>
+                  </tr>
+                  <tr>
+                    <th>Water Bungalows</th>
+                    <th>Two</th>
+                    <th>One or Two</th>
+                    <th>1300</th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="card mt-4">
+          <div class="card-header" style="background-color: black; color:aliceblue" >
+            Please Fill In Your Personal Details
+          </div>
+          <div class="card-body">
+            <div class="col-12 col-md-12">
+              <form method="POST" action="/reservation">
+                <div class="form-group row">
+                  <label for="firstname" class="col-12 col-md-2 col-form-label">FIRST NAME:</label>
+                  <div class="col-12 col-md-4">
+                    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="FIRST NAME" />
+                  </div>
+                  <label for="lastname" class="col-12 col-md-2 col-form-label">LAST NAME:</label>
+                  <div class="col-12 col-md-4">
+                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="LAST NAME" />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="telnum" class="col-12 col-md-2 col-form-label"
+                    >Contact Tel:</label
+                  >
+                  <div class="col-5 col-md-4">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="areacode"
+                      name="areacode"
+                      placeholder="Area Code"
+                    />
+                  </div>
+                  <div class="col-7 col-md-6">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="telnum"
+                      name="telnum"
+                      placeholder="Tel. Number"
+                    />
+                  </div>
+                </div>
+                
+                <div class="form-group row">
+                  <label for="address" class="col-12 col-md-2 col-form-label">ADDRESS:</label>
+                  <div class="col-12 col-md-1">
+                    <input type="number" class="form-control" id="flatNumber" name="number" placeholder="No." />
+                  </div>
+                  <div class="col-12 col-md-7">
+                    <input type="text" class="form-control" id="address" name="address" placeholder="ADDRESS" />
+                  </div>
+                  <div class="col-12 col-md-2">
+                    <input type="text" class="form-control" id="country" name="country" placeholder="COUNTRY" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mt-4">
+          <div class="card-header" style="background-color: #212529; color: aliceblue;" >
+            Please Fill In The Room Details
+          </div>
+          <div class="card-body">
+            <div class="col-12 col-md-12">
+              <form method="POST" action="/reservation">
+                <div class="form-group row">
+                  <label for="customers" class="col-12 col-md-2 col-form-label">NUMBER OF CUSTOMERS:</label>
+                  <div class="col-12 col-md-10">
+                    <input type="number" class="form-control" id="number" name="number" placeholder="No Of Guests" />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="roomtype"  class="col-12 col-md-2 col-form-label">ROOM TYPE:</label>
+                  <div class="col-12 col-md-10">
+                    <select class="form-control" id="roomType">
+                      <option>OverWater Pool Villa</option>
+                      <option>Beach Pool Villa Sunrise</option>
+                      <option>Duplex Beach Pool Villa</option>
+                      <option>Duplex Overwater Pool</option>
+                      <option>Beach Pool Villa Sunset</option>
+                      <option>Water Bungalows</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="date" class="col-12 col-md-2 col-form-label">CHECK IN:</label>
+                  <div class="col-12 col-md-4">
+                    <input type="date" class="form-control" id="in-date" name="date" placeholder="CHECK IN" />
+                  </div>
+                  <label for="date" class="col-12 col-md-2 col-form-label">CHECK OUT:</label>
+                  <div class="col-12 col-md-4">
+                    <input type="date" class="form-control" id="out-date" name="date" placeholder="CHECK OUT" />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="roomCharges" class="col-12 col-md-2">AMOUNT:</label> 
+                  <div class="col-12 col-md-10">
+                    <input type="number" class="form-control" id="number" name="number" placeholder="AMOUNT" />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-12">
+                    <button type="submit" id="btn" class="btn btn-light">
+                      Submit Details
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <br>
+    </div>
+
+    <br>
+    <footer class="footer" style="background-color: #212529; color: aliceblue; margin: 0px 70px">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 offset-1 col-sm-2">
+            <br>
+            <h5>Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="./index.html" style="color: aliceblue;">Overview</a></li>
+              <li><a href="#" style="color: aliceblue;">Photos</a></li>
+              <li><a href="#" style="color: aliceblue;">Rooms</a></li>
+              <li><a href="#" style="color: aliceblue;">Dining</a></li>
+              <li><a href="#" style="color: aliceblue;">Spa & Fitness</a></li>
+            </ul>
+          </div>
+          <div class="col-7 col-sm-5">
+            <br>
+            <h5>Our Address</h5>
+            <address>
+              Van'gaaru Island,<br />
+              Shaviyani Atoll<br />
+              40880<br />
+              <i class="fa fa-phone fa-lg"></i>:  +960 654-6666<br />
+              <i class="fa fa-envelope fa-lg"></i>:
+              <a href="mailto:jwmarriot@hotels.net" style="color: aliceblue;">jwmarriot@hotels.net</a>
+            </address>
+          </div>
+          <div class="col-12 col-sm-4 align-self-center">
+            <div class="text-center">
+              <a
+                class="btn btn-social-icon btn-google"
+                href="http://google.com/+"
+                ><i class="fa fa-google-plus" style="color: aliceblue;"></i
+              ></a>
+              <a
+                class="btn btn-social-icon btn-facebook"
+                href="http://www.facebook.com/profile.php?id="
+                ><i class="fa fa-facebook" style="color: aliceblue;"></i
+              ></a>
+              <a
+                class="btn btn-social-icon btn-twitter"
+                href="http://twitter.com/"
+                ><i class="fa fa-twitter" style="color: aliceblue;"></i
+              ></a>
+              <a
+                class="btn btn-social-icon btn-youtube"
+                href="http://youtube.com/"
+                ><i class="fa fa-youtube" style="color: aliceblue;"></i
+              ></a>
+              <a class="btn btn-social-icon" href="mailto:"
+                ><i class="fa fa-envelope-o" style="color: aliceblue;"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <p>© Copyright 2018 Ristorante Con Fusion</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+      <script>
+          const btn = document.getElementById("btn")
+          btn.addEventListener("click",(e)=>{
+            e.preventDefault();
+            let name = document.getElementById("firstname").value
+            let lastname = document.getElementById("lastname").value
+            let phoneNumber = document.getElementById("telnum").value
+            let address = document.getElementById("address").value
+            let country = document.getElementById("country").value
+            let areacode = document.getElementById("areacode").value
+            let flatNo = document.getElementById("flatNumber").value
+            let roomType = document.getElementById("roomType").value
+            let checkIn = document.getElementById("in-date").value;
+            let checkOut = document.getElementById("out-date").value;
+            let dataObj={name,lastname,phoneNumber,address:`${address},${areacode}`,country,flatNo,roomType,checkIn,checkOut}
+            console.log(dataObj)
+            let url="http://localhost:2000/reservation"
+            let cloudURL = "https://young-springs-63929.herokuapp.com/reservation"
+
+            fetch(cloudURL,{ 
+            method: 'POST', 
+            headers: { 
+                'Content-type': 'application/json'
+            }, 
+            body: JSON.stringify(dataObj) 
+        }).then(res=>res.json()).then(data=>console.log(data)).catch(err=>console.log(err)) 
+          })
+      </script>
+</body>
+</html>
